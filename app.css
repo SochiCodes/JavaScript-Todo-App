@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+    background: url('bg.jpg') no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+section.container{
+    width: 400px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+section.container h1{
+    text-align: center;
+}
+
+section.container form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+section.container input{
+    flex: 1 1 0;
+    width: 70%;
+    padding: 8px 20px;
+    border: 2px solid #567599;
+    border-radius: 5px;
+}
+
+section.container button.addTaskBtn{
+    padding: 8px 10px;
+    border: 2px solid #567599;
+    border-radius: 5px;
+}
+
+.taskContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.taskContainer .task p{
+    flex: 1 1 0;
+}
+
+.taskContainer .task{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.completed{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 3px;
+}
+
+.doneBtn, .deleteButton{
+    border: 2px solid #567599;
+    border-radius: 5px;
+}
