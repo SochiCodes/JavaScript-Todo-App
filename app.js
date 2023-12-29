@@ -24,4 +24,10 @@ addTaskBtn.addEventListener('click', () =>{
 
     taskContainer.appendChild(taskSection)
 
+
+    //strike-through
+    checkButton.addEventListener('click', () =>{
+        p.classList.toggle('completed')
+    })
+
 })
