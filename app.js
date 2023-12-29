@@ -30,4 +30,10 @@ addTaskBtn.addEventListener('click', () =>{
         p.classList.toggle('completed')
     })
 
+    //Delete Task
+    deleteButton.addEventListener('click', () =>{
+        let parentEl = p.parentElement
+            taskContainer.removeChild(parentEl)
+    })
+
 })
