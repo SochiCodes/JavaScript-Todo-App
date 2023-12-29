@@ -36,4 +36,7 @@ addTaskBtn.addEventListener('click', () =>{
             taskContainer.removeChild(parentEl)
     })
 
+    //number task
+    taskNumber++
+
 })
